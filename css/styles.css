@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+div .container {
+  top: 80px;
+}
+.row {
+  width: 100%;
+}
+.sect1,.sect2,.sect3 {
+  float: left;
+  padding: 10px;
+}
+
+.content {
+  background-color: #ADADAD;
+  padding: 0 20px;
+  color: #000;
+  border: 1px solid #000;
+}
+
+#chicken {
+text-align: center;
+}
+
+#beef {
+  text-align: center;
+}
+
+#sushi {
+  text-align: center;
+}
+
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  .sect1,.sect2,.sect3 {
+      display: inline-block;
+      width: 33%;
+  }
+}
+
+
+/********** Medium devices only **********/
+@media (min-width:768px) and (max-width: 991px) {
+  .sect1,.sect2,.sect3 {
+      display: inline-block;
+  }
+  .sect1, .sect2 {
+      width: 50%;
+  }
+  .sect3 {
+      width: 100%;
+  }
+}
+
+/********** Mobil devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand{
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1{
+    padding-top: 10px;
+    font-size: 5vw;
+  }
+  #collapsable-nav a{
+    font-size: 1.2em;
+  }
+  #collapsable-nav a span{
+    font-size: 1em;
+    margin-right: 5px;
+  }
+  .sect1,.sect2,.sect3 {
+      display: inline-block;
+      width: 100%;
+  }
+}
+
+#header-nav {
+  background-color: #9ca0a1;
+  border-radius: 0;
+  border: 0;
+}
+.navbar-brand {
+  padding-top: 25px;
+}
+
+.navbar-brand h1 { 
+  font-family: 'Lora', serif;
+  color: #101114;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+#nav-list {
+  background-color:#E7E7E7;
+  margin-top: 10px;
+}
+#nav-list a {
+  border: 2px solid #000;
+  text-align: center;
+}
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+/* #nav-list a span {
+  font-size: 1.8em;
+} */
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #403e3a;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;  
+  margin-top: -30px;
+}
+
+@media (max-width: 479px) {
+  .navbar-brand h1{
+    padding-top: 5px;
+    font-size: 6vw;
+  }
+}
